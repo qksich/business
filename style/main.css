@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+body {
+    background: #181818;
+}
+
+.top__nav {
+    background: #FFAA4C;
+    padding: 0 60px;
+}
+
+nav ul {
+    display: flex;
+    li {
+        padding: 10px 40px;
+        font-size: 16px;
+    }
+}
+
+nav ul .active {
+    background: #181818;
+    border-radius: 16px 16px 0 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 60px;
+    z-index: 100;
+}
+
+.gray__bg {
+    width: 180px;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 16px;
+    background: #954CED;
+    font-size: 20px;
+}
+
+
+
+
+.hero {
+    margin-top: 150px;
+    h1 {
+        width: 50%;
+    }
+    p {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        width: 40%;
+        line-height: 120%;
+    }
+    .picture {
+        position: absolute;
+        top: 200px;
+        right: 0;
+        z-index: 0;
+    }
+}
+
+h1 {
+    font-size: 96px;
+    line-height: 106%;
+    overflow: hidden;
+}
+
+
+
+
+.about {
+    margin-top: 250px;
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 58%;
+        justify-content: space-between;
+        margin-top: 80px;
+        p {
+            width: 90%;
+        }
+        .blocks {
+            
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .block {
+                width: 48%;
+                h2 {
+                    margin-top: 10px;
+                }
+                p {
+                    width: 100%;
+                    margin-top: 20px;
+                    margin-bottom: 70px;
+                    font-size: 24px;
+                    line-height: 120%;
+                }
+            }
+        }
+    }
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 106%;
+    overflow: hidden;
+}
+
+p {
+    overflow: hidden;
+}
+
+.bold-p {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 100%;
+}
