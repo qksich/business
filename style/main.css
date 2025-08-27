@@ -405,11 +405,13 @@ p {
     }
     .blocks {
         width: 100%;
-        margin: 70px auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 60px auto;
         .block {
             display: flex;
             gap: 20px;
-            margin-bottom: 20px;
+            margin: 10px auto;
         }
     }
 }
@@ -566,12 +568,19 @@ footer {
             } 
         } 
     }
-    
+    .why {
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 28px;
+        }
+    }
 }
 
 @media (max-width: 900px) {
     .info-blocks {
-        padding-top: 40px;
+        padding: 40px 0 0 0;
         .blocks {
             display: block;
             width: 70%;
@@ -586,6 +595,9 @@ footer {
             }
         }
     } 
+    .why .blocks {
+        margin: 30px auto;
+    }
 }
 
 @media (max-width: 800px) {
@@ -621,6 +633,28 @@ footer {
             width: 1549.24px;
         }
     }
+}
+
+@media (max-width: 700px) {
+    .info-blocks .blocks {
+        width: 90%;
+        .block p {
+            width: 50%;
+        }
+    }
+    .why {
+        p {
+            width: 70%;
+        }
+        .blocks {
+            display: block;
+            .block {
+                margin: 0 auto 20px auto;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    } 
 }
 
 @media (max-width: 550px) {
@@ -670,4 +704,30 @@ footer {
             }
         }
     }
+    .info-blocks .blocks .block {
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 20px;
+        }
+    } 
+    .why {
+        margin-top: 70px;
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 24px;
+            width: 90%;
+        }
+        .blocks {
+            display: block;
+            .block {
+                margin: 0 auto 20px auto;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    } 
 }
