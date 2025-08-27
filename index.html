@@ -5,33 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business</title>
     <link rel="stylesheet" href="style/main.css">
-    <script src="script/script.js"></script>
+    <script src="script/script.js" defer></script>
 </head>
 <body>
     <div class="top__nav">
         <nav>
             <ul>
                 <li class="active"><a href="#">For Business</a></li>
-                <li><a href="#">For Customers</a></li>
+                <li class="nn"><a href="#">For Customers</a></li>
             </ul>
         </nav>
     </div>
     <header>
         <div class="logo">
-            <img src="style/public/logo-desktop.png" alt="">
+            <picture>
+                <source
+                srcset="style/public/logo-mobile.png"
+                media="(max-width: 550px)"
+                >
+                <img src="style/public/logo-desktop.png" alt="">
+            </picture>
         </div>
         <button class="open__form gray__bg" type="button">
             <span>Contact sales</span>
         </button>
     </header>
 
+    <dialog id="modal-form" class="win-form">
+            <span class="close">&times;</span>
+        <form>
+            <p>
+                <label for="name">Name <b>*</b></label>
+                <input type="text" id="name" placeholder="Enter name" aria-errormessage="name-errors">
+                <span class="field__errors" data-js-form-field-errors></span>
+            </p>
+            <p>
+                <label for="email">Email <b>*</b></label>
+                <input type="email" id="email" placeholder="Enter email" aria-errormessage="email-errors">
+                <span class="field__errors" data-js-form-field-errors></span>
+            </p>
+            <p>
+                <label for="phone">Phone number <b>*</b></label>
+                <input type="number" id="phone" placeholder="+ 1 900 000 00 00" aria-errormessage="number-errors">
+                <span class="field__errors" id="phone-errors" data-js-form-field-errors></span>
+            </p>
+            <p>
+                <label for="company">Company</label>
+                <input type="text" id="company" placeholder="Enter company">
+            </p>
+            <p>
+                <label for="web">Website/Store URL</label>
+                <input type="text" id="web" placeholder="Enter Website/Store URL">
+            </p>
+            <p class="agree">By submitting this form you are agreeing to Budss’s <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a></p>
+            <button type="submit" class="write__bg check__form"><span>Contact sales</span></button>
+        </form>
+    </dialog>
+
+    <dialog id="thanks-modal" class="win-form">
+        <span class="close">&times;</span>
+        <div class="thanks">
+            <img src="./style/public/smile.png" alt="">
+            <h1>Thank you!</h1>
+            <p>Thank you, we have received your application and will contact you soon!</p>
+            <button type="submit" class="write__bg cl-thanks"><span>Super!</span></button>
+        </div>
+    </dialog>
+
     <div class="container hero">
-        <h1>Everyone is an Influencer</h1>
+        <h1>Everyone is an Influencer</h1>
         <p>Budss is a payments as a service and WOM engine dedicated to acquisition and retention of customers to your business.</p>
         <button class="open__form gray__bg" type="button">
             <span>Contact sales</span>
         </button>
-        <img class="picture" src="style/public/image1.png" alt="">
+        <picture>
+            <source
+            srcset="style/public/image2.png"
+            media="(max-width: 800px)"
+            >
+            <img class="picture" src="style/public/image1.png" alt="">
+        </picture>
     </div>
 
     <div class="container about">
@@ -61,7 +114,131 @@
                 </div>
             </div>
         </div>
-        
+        <img class="picture" src="style/public/Gr5.png" alt="">
     </div>
+
+    <div class="marquee">
+        <div class="lines1">
+            <div class="line pad">
+                <h1>How Budss Works</h1>
+                <h1 class="color-blue">How Budss Works</h1>
+                <h1>How Budss Works</h1>
+                <h1 class="color-blue">How Budss Works</h1>
+            </div>
+        </div>
+        <div class="lines2">
+            <div class="line">
+                <h1>How Budss Works</h1>
+                <h1 class="color-violet">How Budss Works</h1>
+                <h1>How Budss Works</h1>
+                <h1 class="color-violet">How Budss Works</h1>
+            </div>
+        </div>
+        <div class="lines1">
+            <div class="line">
+                <h1 class="color-yellow">How Budss Works</h1>
+                <h1>How Budss Works</h1>
+                <h1 class="color-yellow">How Budss Works</h1>
+                <h1>How Budss Works</h1>
+            </div>
+        </div>
+        <picture>
+            <source
+            srcset="style/public/Iphone2.png"
+            media="(max-width: 800px)"
+            >
+            <img class="picture" src="style/public/Iphone.png" alt="">
+        </picture>
+    </div>
+
+    <div class="info-blocks">
+        <div class="blocks">
+            <div class="block">
+                <h1>15%</h1>
+                <p>Increase in Purchase Amount</p>
+            </div>
+            <div class="block">
+                <h1>30%</h1>
+                <p>Growth in Annual Sales</p>
+            </div>
+            <div class="block">
+                <h1>10%</h1>
+                <p>Growth in New  Customers</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container why">
+        <h1>Why Budss</h1>
+        <p>We Provide Advanced Payment Solutions To Grow Your Business</p>
+        <div class="blocks">
+            <div class="block">
+                <img src="./style/public/Frame1.png" alt="">
+                <img src="./style/public/Frame2.png" alt="">
+            </div>
+            <div class="block">
+                <img src="./style/public/Frame3.png" alt="">
+                <img src="./style/public/Frame4.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="container">
+            <div class="grow">
+                <h1>Let  Your Business Grow</h1>
+                <button class="open__form write__bg" type="button">
+                    <span>Contact sales</span>
+                </button>
+            </div>
+            <div class="brand">
+                <div>
+                    <h1>Your Brand Awareness Maters</h1>
+                    <p>Budss is a husle free solution to put your brand on any digital surface including Instagram, Facebook, Twitter and TikTok</p>
+                </div>
+                <div class="social">
+                    <div><img src="./style/public/Facebook.png" alt=""></div>
+                    <div class="down"><img src="./style/public/twitter.png" alt=""></div>
+                    <div><img src="./style/public/inst.png" alt=""></div>
+                    <div class="down"><img src="./style/public/tiktok.png" alt=""></div>
+                </div>
+            </div>
+            <div class="spon">
+                <div><img src="./style/public/woo.png" alt=""></div>
+                <div><img src="./style/public/shopity.png" alt=""></div>
+                <div><img src="./style/public/square.png" alt=""></div>
+                <div><img src="./style/public/sq.png" alt=""></div>
+                <div><img src="./style/public/clover.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container">
+        <div class="top">
+            <div class="logo"><img src="./style/public/logo-desktop.png" alt=""></div>
+            <nav>
+                <ul>
+                    <li><a href="#">For Business</a></li>
+                    <li><a href="#">For Customers</a></li>
+                </ul>
+            </nav>
+            <div class="btns">
+                <button class="open__form gray__bg" type="button">
+                    <span>Contact sales</span>
+                </button>
+                <div><img src="./style/public/appstore.png" alt=""></div>
+                <div><img src="./style/public/googleplay.png" alt=""></div>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom">
+            <p>© Copyright 2023, All Rights Reserved by Budss</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms Of Use - Seller</a></li>
+                <li><a href="#">Terms of Use - Sellers & Customers</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
