@@ -436,7 +436,8 @@ p {
     }
     .brand {
         display: grid;
-        grid-template-columns: 1fr 45%;
+        grid-template-columns: 1fr 500px;
+        flex-wrap: wrap;
         div {
             h1 {
                 font-size: 96px;
@@ -452,8 +453,13 @@ p {
         .social {
             margin: 45px;
             display: flex;
-            gap: 40px;
+            gap: 8%;
             justify-content: right;
+            div {
+                width: 90px;
+                overflow: hidden;
+                height: 90px;
+            }
             .down {
                 margin-top: 90px;
             }
@@ -470,7 +476,8 @@ p {
 }
 
 .spon div,
-.brand .social div {
+.brand .social div,
+footer .top .btns div div {
     cursor: pointer;
 }
 
@@ -497,9 +504,14 @@ footer {
         }
         .btns {
             display: flex;
-            gap: 20px;
+            gap: 10px;
+            flex-wrap: wrap;
             button {
                 margin-right: 20px;
+            }
+            div {
+                display: flex;
+                gap: 20px;
             }
         }
     }
@@ -511,6 +523,7 @@ footer {
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+        flex-wrap: wrap;
         p, a {
             color: #B9B9B9;
         }
@@ -528,10 +541,6 @@ footer {
     .about .picture {
         top: 1550px;
     }
-}
-
-@media (max-width: 1200px) {
-    
 }
 
 @media (max-width: 1120px) {
@@ -576,6 +585,28 @@ footer {
             font-size: 28px;
         }
     }
+    .contact {
+        .grow {
+            h1 {
+                font-size: 54px;
+            }
+        }
+        .brand {
+            div {
+                h1 { font-size: 70px; }
+                p { font-size: 18px; }
+            } 
+        }
+    } 
+}
+
+@media (max-width: 1000px) {
+    .contact .brand {
+        grid-template-columns: 1fr;
+        .social {
+            justify-content: left;
+        }
+    } 
 }
 
 @media (max-width: 900px) {
@@ -633,6 +664,12 @@ footer {
             width: 1549.24px;
         }
     }
+    .contact .grow {
+        padding:50px 30px;
+        h1 {
+            font-size: 40px;
+        }
+    }
 }
 
 @media (max-width: 700px) {
@@ -655,6 +692,27 @@ footer {
             }
         }
     } 
+    .contact .brand {
+        div h1 { font-size: 60px; }
+        .social {
+            margin: 40px 20px;
+            div {
+                width: 65px;
+                height: 65px;
+            }
+            .down { margin-top: 65px; }
+        }
+    } 
+    footer .bottom ul {
+        display: block;
+        li {
+            margin: 10px 0;
+        }
+    }
+    .win-form .thanks {
+        h1 { font-size: 30px; }
+        p { font-size: 20px; }
+    }
 }
 
 @media (max-width: 550px) {
@@ -730,4 +788,37 @@ footer {
             }
         }
     } 
+    .contact {
+        .brand {
+            div {
+                h1 { font-size: 40px; }
+            } 
+        }
+        .grow {
+            padding: 30px;
+            h1 {
+                font-size: 40px;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    } 
+    footer .top .btns {
+        
+        button {
+            width: 100%;
+            margin-right: 0;
+        }
+    } 
+    .win-form .thanks {
+        h1 { font-size: 24px; }
+        p { font-size: 20px; }
+    }
+}
+
+@media (max-width: 504px) {
+    footer .top nav {
+        margin: 10px 0 20px 0;
+    }
 }

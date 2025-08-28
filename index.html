@@ -65,7 +65,10 @@
     <dialog id="thanks-modal" class="win-form">
         <span class="close">&times;</span>
         <div class="thanks">
-            <img src="./style/public/smile.png" alt="">
+            <picture>
+                <source srcset="./style/public/smile-mobile.png" media="(max-width: 600px)">
+                <img src="./style/public/smile.png" alt="">
+            </picture>
             <h1>Thank you!</h1>
             <p>Thank you, we have received your application and will contact you soon!</p>
             <button type="submit" class="write__bg cl-thanks"><span>Super!</span></button>
@@ -209,25 +212,64 @@
                     <p>Budss is a husle free solution to put your brand on any digital surface including Instagram, Facebook, Twitter and TikTok</p>
                 </div>
                 <div class="social">
-                    <div><img src="./style/public/Facebook.png" alt=""></div>
-                    <div class="down"><img src="./style/public/twitter.png" alt=""></div>
-                    <div><img src="./style/public/inst.png" alt=""></div>
-                    <div class="down"><img src="./style/public/tiktok.png" alt=""></div>
+                    <div>
+                        <picture>
+                            <source srcset="./style/public/Facebook64.png" media="(max-width: 700px)">
+                            <img src="./style/public/Facebook.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="down">
+                        <picture>
+                            <source srcset="./style/public/twitter64.png" media="(max-width: 700px)">
+                            <img src="./style/public/twitter.png" alt="">
+                        </picture>
+                    </div>
+                    <div>
+                        <picture>
+                            <source srcset="./style/public/inst64.png" media="(max-width: 700px)">
+                            <img src="./style/public/inst.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="down">
+                        <picture>
+                            <source srcset="./style/public/tiktok64.png" media="(max-width: 700px)">
+                            <img src="./style/public/tiktok.png" alt="">
+                        </picture>
+                    </div>
                 </div>
             </div>
             <div class="spon">
-                <div><img src="./style/public/woo.png" alt=""></div>
-                <div><img src="./style/public/shopity.png" alt=""></div>
-                <div><img src="./style/public/square.png" alt=""></div>
-                <div><img src="./style/public/sq.png" alt=""></div>
-                <div><img src="./style/public/clover.png" alt=""></div>
+                <picture>
+                    <source srcset="./style/public/woo-adaptive.png" media="(max-width: 700px)">
+                    <img src="./style/public/woo.png" alt="">
+                </picture> 
+                <picture>
+                    <source srcset="./style/public/shopity-adaptive.png" media="(max-width: 700px)">
+                    <img src="./style/public/shopity.png" alt="">
+                </picture> 
+                <picture>
+                    <source srcset="./style/public/square-adaptive.png" media="(max-width: 700px)">
+                    <img src="./style/public/square.png" alt="">
+                </picture> 
+                <picture>
+                    <source srcset="./style/public/sq-adaptive.png" media="(max-width: 700px)">
+                    <img src="./style/public/sq.png" alt="">
+                </picture>
+                <picture>
+                    <source srcset="./style/public/clover-adaptive.png" media="(max-width: 700px)">
+                    <img src="./style/public/clover.png" alt="">
+                </picture>
             </div>
         </div>
     </div>
 
     <footer class="container">
         <div class="top">
-            <div class="logo"><img src="./style/public/logo-desktop.png" alt=""></div>
+            <div class="logo">
+                <picture>
+                    <source srcset="./style/public/logo-mobile.png" media="(max-width: 600px)">
+                    <img src="./style/public/logo-desktop.png" alt="">
+                </picture></div>
             <nav>
                 <ul>
                     <li><a href="#">For Business</a></li>
@@ -238,8 +280,11 @@
                 <button class="open__form gray__bg" type="button">
                     <span>Contact sales</span>
                 </button>
-                <div><img src="./style/public/appstore.png" alt=""></div>
-                <div><img src="./style/public/googleplay.png" alt=""></div>
+                <div>
+                    <div><img src="./style/public/appstore.png" alt=""></div>
+                    <div><img src="./style/public/googleplay.png" alt=""></div>
+                </div>
+                
             </div>
         </div>
         <hr>
