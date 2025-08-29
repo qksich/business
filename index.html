@@ -33,27 +33,45 @@
 
     <dialog id="modal-form" class="win-form">
             <span class="close">&times;</span>
-        <form>
-            <p>
-                <label for="name">Name <b>*</b></label>
-                <input type="text" id="name" placeholder="Enter name" aria-errormessage="name-errors">
-                <span class="field__errors" data-js-form-field-errors></span>
+        <form id="form" method="post" novalidate>
+            <p class="field">
+                <label for="name">Name</label>
+                <input 
+                    id="name" 
+                    placeholder="Enter name" 
+                    aria-errormessage="name-errors"
+                    class="check"
+                    required
+                >
+                <span class="field__errors">This field is required.</span>
             </p>
-            <p>
-                <label for="email">Email <b>*</b></label>
-                <input type="email" id="email" placeholder="Enter email" aria-errormessage="email-errors">
-                <span class="field__errors" data-js-form-field-errors></span>
+            <p class="field">
+                <label class="field__label" for="email">Email</label>
+                <input
+                    id="email" 
+                    placeholder="Enter email"
+                    aria-errormessage="email-errors"
+                    class="check"
+                    required
+                >
+                <span class="field__errors">This field is required.</span>
             </p>
-            <p>
-                <label for="phone">Phone number <b>*</b></label>
-                <input type="number" id="phone" placeholder="+ 1 900 000 00 00" aria-errormessage="number-errors">
-                <span class="field__errors" id="phone-errors" data-js-form-field-errors></span>
+            <p class="field">
+                <label class="field__label" for="phone">Phone number</label>
+                <input
+                    id="phone" 
+                    placeholder="+ 1 900 000 00 00"
+                    aria-errormessage="phone-errors"
+                    class="check"
+                    required
+                >
+                <span class="field__errors">This field is required.</span>
             </p>
-            <p>
+            <p class="field">
                 <label for="company">Company</label>
                 <input type="text" id="company" placeholder="Enter company">
             </p>
-            <p>
+            <p class="field">
                 <label for="web">Website/Store URL</label>
                 <input type="text" id="web" placeholder="Enter Website/Store URL">
             </p>
