@@ -15,6 +15,7 @@ const modalThanks = document.querySelector('#thanks-modal') // второй мо
 const closeFormButton = document.querySelectorAll('.close') // кнопки закрывающие форму
 const closeModalThanks = document.querySelector('.cl-thanks') // кнопка во втором модуле
 const errorMessage = document.querySelectorAll('.field__errors')
+const cookieElement = document.querySelector('.cookie')
 
 //открытие формы
 openFormButton.forEach(button => {
@@ -81,63 +82,10 @@ closeModalThanks.addEventListener('click', (event) => {
 })
 
 
-// валидация формы
+// cookie
 
-
-
-
-
-
-
-
-
-
-
-/*
-class FormsValidation {
-    selectors = {
-        form: '[data-js-form]',
-        fieldErrors: '[data-js-form-field-errors]'
-    }
-
-    errorMessages() {
-        valueMissing: 'This field is required.'
-    }
-
-    constructor() {
-        this.bindEvents()
-    }
-
-    validateField(fieldControlElement) {
-        const errors = fieldControlElement.validity
-        const errorMessages = []
-
-        Object.entries(this.errorMessages).forEach(([errorType, errorMessage]) => {
-            if (errors[errorType]) {
-                errorMessages.push(errorMessage)
-            }
-        })
-
-        console.log(errorMessages)
-        
-    }
-
-    onBlur(event) { // проверка что событие на эл. внутри формы
-        const { target } = event
-        const isFormField = target.closest(this.selectors.form)
-        const isRequired = target.required
-
-        if (isFormField && isRequired) {
-            this.validateField(target)
-
-        }
-    }
-
-    bindEvents() {// привязка слушателей к document
-        document.addEventListener('blur', (event) => {
-            this.onBlur(event)
-        }, {capture: true} )
-    }
-}
-
-new FormsValidation()*/
+cookieElement.querySelectorAll('.close-message').forEach(btn => {
+    btn.addEventListener('click', () => {
+        cookieElement.style.display = 'none'
+    })
+})
